@@ -2,9 +2,18 @@
 
 
 // length prompted to user
-var length = window.prompt('length of password (8-126')
 
-//ask if the user wants numbers in passwords
+
+var length = window.prompt('length of password (8-126)')
+  
+if (length > 126 || length < 8){
+
+  window.alert("You need to provide a valid answer! Please try again.");
+  }
+
+
+
+  //ask if the user wants numbers in passwords
 var number = window.confirm('use numbers in password?')
 if (number) {
   number = "0123456789";
